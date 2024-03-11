@@ -32,7 +32,7 @@ app.use(cors(
     credentials:true
   }
 ));
-
+mongoose.connect('mongodb+srv://Foodie:RtnOuMzKCw0zPp6A@foodie.hdnryj0.mongodb.net/?retryWrites=true&w=majority&appName=Foodie')
 //set http headers
 app.use(helmet());
 //compress the node application
