@@ -25,7 +25,13 @@ const app: Application = express();
 app.use(express.json({ limit: "10kb" }));
 app.use(express.urlencoded({ extended: true }));
 
-app.use(cors());
+app.use(cors(
+  {
+    origin:{"https://foodreceipe-sigma.vercel.app"},
+    methods:{"POST","GET"},
+    credentials:true
+  }
+));
 
 //set http headers
 app.use(helmet());
