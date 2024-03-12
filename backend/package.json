@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Foodie Doodie API",
   "main": "index.js",
-  "repository": "https://github.com/ikechukwu-peter/foodie-doodie",
-  "author": "Ikechukwu Peter",
+  "repository": "https://github.com/DeveloperYasmin/foodreceipe",
+  "author": "Yasmin",
   "license": "MIT",
   "private": false,
   "scripts": {
