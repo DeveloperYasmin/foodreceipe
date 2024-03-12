@@ -25,8 +25,14 @@ const app: Application = express();
 app.use(express.json({ limit: "10kb" }));
 app.use(express.urlencoded({ extended: true }));
 
-app.use(cors());
-
+app.use(cors(
+  {
+    origin:{"https://foodreceipe-sigma.vercel.app"},
+    methods:{"POST","GET"},
+    credentials:true
+  }
+));
+mongoose.connect('mongodb+srv://Foodie:RtnOuMzKCw0zPp6A@foodie.hdnryj0.mongodb.net/?retryWrites=true&w=majority&appName=Foodie')
 //set http headers
 app.use(helmet());
 //compress the node application
